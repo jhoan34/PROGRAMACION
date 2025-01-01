@@ -1,0 +1,126 @@
+<!-- Elementos estructurales -->
+<nav>
+    <!-- Barra de navegación -->
+    <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<section id="servicios">
+    <!-- Bloque de contenido temático -->
+    <h2>Servicios</h2>
+    <p>Ofrecemos una variedad de servicios para satisfacer tus necesidades.</p>
+</section>
+
+<article>
+    <!-- Artículo independiente -->
+    <header>
+        <h2>Título del Artículo</h2>
+        <p>Publicado el <time datetime="2024-12-27">27 de diciembre de 2024</time></p>
+    </header>
+    <p>Contenido del artículo.</p>
+    <footer>
+        <p>Autor: <address>Juan Pérez</address></p>
+    </footer>
+</article>
+
+<!-- Elementos para contenido incrustado -->
+<embed src="archivo.pdf" width="500" height="300" type="application/pdf">
+<!-- Muestra contenido como PDF o multimedia incrustado -->
+
+<object data="archivo.pdf" type="application/pdf" width="500" height="300">
+    <!-- Uso avanzado para incluir contenido externo -->
+    <p>Tu navegador no soporta este tipo de contenido.</p>
+</object>
+
+<!-- Etiqueta iframe avanzada -->
+<iframe src="https://www.google.com/maps" title="Mapa de Google" width="600" height="450" loading="lazy"></iframe>
+<!-- loading="lazy" para carga diferida -->
+
+<!-- Elementos de lista avanzados -->
+<menu>
+    <!-- Alternativa semántica a <ul> para listas de comandos -->
+    <li><button onclick="alert('Comando 1 ejecutado')">Comando 1</button></li>
+    <li><button onclick="alert('Comando 2 ejecutado')">Comando 2</button></li>
+</menu>
+
+<!-- Elementos de texto -->
+<bdo dir="rtl">Este texto se leerá de derecha a izquierda.</bdo>
+<!-- Controla la dirección del texto -->
+
+<ins>Texto añadido</ins>
+<del>Texto eliminado</del>
+<!-- Para marcar cambios en un documento -->
+
+<q cite="https://example.com">Esto es una cita corta.</q>
+<!-- Cita en línea -->
+
+<blockquote cite="https://example.com">
+    Esto es una cita larga que puede abarcar varios párrafos.
+</blockquote>
+
+<!-- Etiquetas menos comunes -->
+<map name="mapa-imagen">
+    <!-- Definir áreas dentro de una imagen -->
+    <area shape="rect" coords="34,44,270,350" alt="Texto 1" href="https://example.com/1">
+    <area shape="circle" coords="100,100,50" alt="Texto 2" href="https://example.com/2">
+</map>
+<img src="imagen.jpg" usemap="#mapa-imagen" alt="Imagen con mapa interactivo">
+
+<!-- Audio avanzado -->
+<audio controls autoplay loop>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    Tu navegador no soporta audio.
+</audio>
+
+<!-- Video avanzado -->
+<video controls autoplay muted loop poster="poster.jpg">
+    <!-- poster es la imagen que se muestra antes de la reproducción -->
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.ogg" type="video/ogg">
+    Tu navegador no soporta video.
+</video>
+
+<!-- Etiquetas de metadatos menos comunes -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Obliga al navegador a usar el modo más reciente de renderizado -->
+
+<meta name="robots" content="index, follow">
+<!-- Indica a los motores de búsqueda cómo indexar la página -->
+
+<!-- Etiquetas obsoletas (para conocerlas) -->
+<marquee>Texto que se desplaza (no recomendado, obsoleto)</marquee>
+<font color="red">Texto en rojo (obsoleto, usar CSS)</font>
+
+<!-- Elementos para accesibilidad -->
+<figure role="img" aria-label="Gráfico descriptivo">
+    <img src="grafico.png" alt="Gráfico">
+    <figcaption>Descripción detallada del gráfico.</figcaption>
+</figure>
+
+<!-- Elementos interactivos -->
+<meter value="0.7" min="0" max="1">70%</meter>
+<!-- Indicador de una medida dentro de un rango -->
+
+<progress value="50" max="100">50%</progress>
+<!-- Indicador de progreso -->
+
+<dialog open>
+    <!-- Cuadro de diálogo o modal -->
+    <p>Este es un cuadro de diálogo.</p>
+    <button onclick="this.parentElement.close()">Cerrar</button>
+</dialog>
+
+<!-- Contenedores semánticos -->
+<template>
+    <!-- Define contenido que no se renderiza hasta ser clonado dinámicamente -->
+    <p>Este es un contenido de plantilla.</p>
+</template>
+
+<slot>
+    <!-- Usado en componentes web para definir lugares donde se insertará contenido -->
+    Contenido por defecto.
+</slot>

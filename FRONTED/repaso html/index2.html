@@ -1,0 +1,126 @@
+<!-- Estructura semántica adicional -->
+<header>
+    <!-- Usado para la cabecera de la página -->
+    <h1>Encabezado principal</h1>
+    <nav>
+        <!-- Navegación dentro del sitio -->
+        <ul>
+            <li><a href="#seccion1">Sección 1</a></li>
+            <li><a href="#seccion2">Sección 2</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="seccion1">
+    <!-- Define una sección de contenido -->
+    <h2>Sección 1</h2>
+    <p>Contenido de la primera sección.</p>
+</section>
+
+<article>
+    <!-- Contenido independiente como un artículo o post -->
+    <h2>Artículo</h2>
+    <p>Contenido de un artículo independiente.</p>
+</article>
+
+<aside>
+    <!-- Información adicional o secundaria -->
+    <!--aside es bloque que funciona para darle
+        informacion relacionada al contenido principal
+    -->
+    <p>Esto es un bloque de contenido secundario, como un anuncio o enlace relacionado.</p>
+</aside>
+
+<footer>
+    <!-- Pie de página -->
+    <p>Derechos reservados &copy; 2024</p>
+</footer>
+
+<!-- Etiquetas de formulario avanzadas -->
+<form action="/registro" method="post">
+    <fieldset>
+        <!-- Agrupa campos relacionados -->
+        <legend>Registro</legend> <!-- Título del grupo -->
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required> <!-- Campo de email con validación -->
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" minlength="6" required> <!-- Contraseña con validación -->
+
+        <label for="fecha">Fecha de nacimiento:</label>
+        <input type="date" id="fecha" name="fecha">
+
+        <label for="color">Selecciona un color:</label>
+        <input type="color" id="color" name="color">
+
+        <label for="rango">Selecciona un rango:</label>
+        <input type="range" id="rango" name="rango" min="0" max="100">
+    </fieldset>
+
+    <button type="submit">Registrar</button>
+</form>
+
+<!-- Listas avanzadas -->
+<dl>
+    <!-- Lista de definiciones -->
+    <dt>HTML</dt> <!-- Término -->
+    <dd>Lenguaje de marcado para estructurar contenido web.</dd> <!-- Descripción -->
+
+    <dt>CSS</dt>
+    <dd>Lenguaje para estilizar contenido web.</dd>
+</dl>
+
+<!-- Contenido interactivo -->
+<details>
+    <!-- Contenido colapsable -->
+    <summary>Más información</summary>
+    <!-- Título que muestra/oculta el contenido -->
+    <p>Este contenido se muestra al expandir.</p>
+</details>
+
+<!-- Etiquetas multimedia -->
+<figure>
+    <!-- Contenedor para imágenes o contenido multimedia -->
+    <img src="imagen2.jpg" alt="Descripción de la imagen">
+    <figcaption>Descripción adicional de la imagen.</figcaption> <!-- Texto descriptivo -->
+</figure>
+
+<!-- Elementos especiales -->
+<mark>Texto destacado</mark> <!-- Marca texto importante -->
+<abbr title="HyperText Markup Language">HTML</abbr> <!-- Abreviatura con descripción -->
+<cite>Autor o fuente</cite> <!-- Referencia o cita -->
+<code>&lt;div&gt;</code> <!-- Código fuente -->
+<kbd>Ctrl + C</kbd> <!-- Entrada de teclado -->
+<var>x</var> <!-- Variable o valor -->
+<samp>Mensaje de salida</samp> <!-- Salida del sistema -->
+
+<!-- Contenido relacionado con scripts -->
+<script>
+    // Código JavaScript puede ir aquí
+    console.log('¡Hola, mundo!');
+</script>
+
+<!-- Etiquetas de metadatos -->
+<meta name="description" content="Descripción del contenido de la página">
+<meta name="author" content="Tu Nombre">
+<meta name="keywords" content="HTML, CSS, JavaScript">
+<meta http-equiv="refresh" content="30"> <!-- Recarga la página cada 30 segundos -->
+
+<!-- Etiqueta para incrustar SVG -->
+<svg width="100" height="100">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>
+
+<!-- Etiquetas para accesibilidad -->
+<label for="buscar">Buscar:</label>
+<input type="search" id="buscar" name="buscar" aria-label="Campo de búsqueda">
+
+<!-- Etiqueta de progreso -->
+<progress value="70" max="100"></progress> <!-- Barra de progreso -->
+
+<!-- Contenedor genérico -->
+<main>
+    <!-- Contenido principal de la página -->
+    <h1>Contenido Principal</h1>
+    <p>Este es el contenido principal de la página.</p>
+</main>

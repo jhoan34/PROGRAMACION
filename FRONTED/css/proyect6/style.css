@@ -1,0 +1,127 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+
+}
+
+
+
+.container {
+    height: 400px;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.285) 1px 2px 10px 0px;
+    background-color: rgba(76, 76, 76);
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    position: relative;
+
+}
+
+.circulo{
+    position: absolute;
+    width: 212px;
+    height: 212px;
+    top: 87px;
+    left: 87px;
+    background: rgb(36, 36, 36);
+    border: 7px solid rgb(58, 58, 58);
+    border-radius: 50%;
+    text-align: center;
+  
+    display: grid;
+    place-items: center;
+}
+  
+.esfera{
+    position: absolute;
+    height: 62%;
+    width: 62%;
+    transform: rotate(calc(5deg * var(--esfera)));
+}
+  
+.puntos_1 {
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.puntos_2 {
+    height: 2%;
+    width: 2%;
+    position: absolute;
+    right:0;
+    top: 0;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.puntos_3 {
+    height: 2%;
+    width: 2%;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+
+.puntos_4 {
+    height: 2%;
+    width: 2%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.spinner {
+    position: absolute;
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    top: 5px;
+    left: 5px;
+}
+
+.spinner circle {
+    fill: none;
+    stroke: #f85b5b;
+    stroke-width: 3;
+    stroke-dasharray: 600;
+    transform-origin: center center;
+    animation:  spinner 5s linear infinite;
+    transform: rotate(-90deg);
+}
+
+@keyframes spinner {
+    from {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50% {
+        stroke-dashoffset: 0;
+        transform: rotate(-90deg) scaleY(1);
+    }
+
+    50.001% {
+        transform: rotate(-90deg) scaleY(-1);
+    }
+
+    to {
+        stroke-dashoffset: 625;
+        transform: rotate(-90deg) scaleY(-1);
+    }
+}
